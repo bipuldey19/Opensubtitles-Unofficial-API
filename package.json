@@ -1,0 +1,36 @@
+{
+  "name": "opensubtitles-unofficial-api",
+  "version": "1.0.0",
+  "description": "An unofficial Opensubtiles API for searching and downlaoding subtiitles from opensubtitles.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bipuldey19/Opensubtitles-Unofficial-API.git"
+  },
+  "keywords": [
+    "opensubtitles",
+    "opensubtitles",
+    "api",
+    "subtitle",
+    "subtitle",
+    "api"
+  ],
+  "author": "https://github.com/bipuldey19",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bipuldey19/Opensubtitles-Unofficial-API/issues"
+  },
+  "homepage": "https://github.com/bipuldey19/Opensubtitles-Unofficial-API#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cheerio": "^1.0.0-rc.11",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
