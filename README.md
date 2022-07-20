@@ -427,7 +427,6 @@ $ npm start
 
 > `api/all/search?q=QUERY`
 
-<br>
 <details>
 <summary style='font-size: 15px'><span style='font-size: 20px;font-weight:bold;'>Available Languages</span></summary>
 <p>
