@@ -1,5 +1,5 @@
 
-<h2 align='center'>Opensubtitles Unofficial API 🚀</h2>
+<h1 align='center'>Opensubtitles Unofficial API 🚀</h1>
 
 <p align="center">
 <span style='font-size: 19px'>
@@ -1846,5 +1846,4 @@ Type can only be 2 type. One is `movies` and other is `series`.
 > Suggestions and pull requests are welcomed. You can do feature request also. 
 
 ## ⚙️ Credits
-1. Bipul Dey 
-Contact: [Github](https://github.com/bipuldey19), [Telegram](https://t.me/bipuldey19)
+#### 📌 Bipul Dey | Contact: [Github](https://github.com/bipuldey19), [Telegram](https://t.me/bipuldey19)
