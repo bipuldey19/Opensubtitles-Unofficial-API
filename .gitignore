@@ -1,3 +1,5 @@
 node_modules
 .vscode
 .netlify
+package-lock.json
+language

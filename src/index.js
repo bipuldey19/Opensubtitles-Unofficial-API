@@ -1,23 +1,20 @@
 const express = require("express");
+const cors = require("cors");
 const app = express();
 
-// Website
-
-app.use(express.static('dist'))
+const PORT = process.env.PORT || 3000;
 
 // Opensubtittles API search
 
-let normalSearch = require("./routes/normalSearch");
-app.use(normalSearch)
-
-// Advanced Search
-
-let advancedSearch = require("./routes/advancedSearch")
-app.use(advancedSearch)
+let search = require("./routes/search");
+app.use(search);
 
 // Result page
 
-let result = require("./routes/result")
-app.use(result)
+let result = require("./routes/result");
+app.use(result);
 
-app.listen(3000);
+app.use(express.static("dist"));
+app.use(cors());
+
+app.listen(PORT);

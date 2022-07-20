@@ -4,9 +4,9 @@ const cheerio = require("cheerio");
 let express = require("express");
 let router = express.Router();
 
-router.get("/api/id-:id", async (req, res, next) => {
+router.get("/api/view", async (req, res, next) => {
   try {
-    const id = req.params.id.replace(/\s/g, "%20");
+    const id = req.query.id;
     let url =
       "https://www.opensubtitles.org/en/search/sublanguageid-all/idmovie-" + id;
 
@@ -54,7 +54,7 @@ router.get("/api/id-:id", async (req, res, next) => {
         return err;
       });
     if(response[0].data.length === 0){
-        res.json({"error" : "No search results found for " + id});
+        res.status(401).json({"error" : "No search results found for " + id});
         return
     }
     res.json(response);
