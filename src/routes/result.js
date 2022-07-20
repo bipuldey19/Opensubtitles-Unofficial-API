@@ -53,9 +53,9 @@ router.get("/api/view", async (req, res, next) => {
       .catch((err) => {
         return err;
       });
-    if(response[0].data.length === 0){
-        res.status(401).json({"error" : "No search results found for " + id});
-        return
+    if (response[0].data.length === 0) {
+      res.status(401).json({ error: "No search results found for " + id });
+      return;
     }
     res.json(response);
   } catch (err) {
