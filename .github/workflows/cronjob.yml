@@ -5,7 +5,7 @@ name:
  
   # Controls when the workflow will run
 on:
-  # Triggers the workflow every 5 minutes
+  # Triggers the workflow every 2 minutes
   schedule:
     - cron: "*/2 * * * *"
  
