@@ -48,7 +48,6 @@ router.get(["/api/view", "/api/:lan/view"], async (req, res, next) => {
             .find("td:nth-child(1)")
             .text()
             .replace(/\s|Watch onlineDownload Subtitles Searcher/g, " ");
-          console.log($(this).find("td:nth-child(3) a").attr("href"));
           let language = $(this).find("td:nth-child(2) a").attr("title");
           let download = $(this).find("td:nth-child(3) a").attr("href");
           let uploadedAt = $(this).find("td:nth-child(4) time").attr("title");
