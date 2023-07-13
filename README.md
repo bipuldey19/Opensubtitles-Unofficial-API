@@ -33,7 +33,11 @@ $ npm start
 |    Feature     |    Query    |         Orginal            | Direct Download |
 | :------------: | :---------: | :------------------------: | :-------: |
 |  Normal Search |   `q=`   |     https://www.opensubtitles.org/en/search2/sublanguageid-all/moviename-halo      |    ❌     |
+<<<<<<< HEAD
 | Search based on <a href="https://github.com/bipuldey19/Opensubtitles-Unofficial-API/blob/main/language">language</a> |    `eng`    |  https://www.opensubtitles.org/en/search2/sublanguageid-eng/moviename-halo  |    ❌     |
+=======
+| Search based on <a "https://github.com/bipuldey19/Opensubtitles-Unofficial-API/blob/main/language">language</a> |    `eng`    |  https://www.opensubtitles.org/en/search2/sublanguageid-eng/moviename-halo  |    ❌     |
+>>>>>>> e8b1149c0ac5252e51f5304362840ec71f029648
 |    Search by Type (Movies / Series)     |  `type=`  |  https://www.opensubtitles.org/en/search2/sublanguageid-eng/searchonlytvseries-on/moviename-halo   |    ❌     |
 | View result by Id |    `id=`    |  https://www.opensubtitles.org/en/search/sublanguageid-all/idmovie-138044  |    ✅     |
 |   Search by Season    | `s=` | https://www.opensubtitles.org/en/search/sublanguageid-eng/moviename-halo/season-1 |    ✅     |
