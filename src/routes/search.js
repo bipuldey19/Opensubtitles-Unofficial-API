@@ -157,6 +157,7 @@ router.get(["/api/search", "/api/:lan/search"], async (req, res, next) => {
           let language = $(this).find("td:nth-child(2) a").attr("title");
           let download = $(this).find("td:nth-child(5) a").attr("href");
           let uploadedAt = $(this).find("td:nth-child(4) time").attr("title");
+
           data.push({
             title: title,
             language: language,
