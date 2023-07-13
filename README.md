@@ -1185,9 +1185,9 @@ Type can only be 2 type. One is `movies` and other is `series`.
 |   Query (q)    |    ✅    | string  |  None   |                  `api/search?q=halo`                  |
 |   Language   |    ❌    | string  |  all   |          `api/eng/search?q=halo`           |
 | Type  |    ❌    | string  |  None   |  `api/eng/search?q=halo&type=series`   |
-|   Season    |    ❌    | integer |    None    | `api/eng/search?=halo&s=1&type=series` |
-|   Episode    |    ❌    | integer |    None    | `api/eng/search?=halo&e=1&type=series` |
-|   Season & Episode    |    ❌    | integer |    None    | `api/eng/search?=halo&s=1&e=1&type=series` |
+|   Season    |    ❌    | integer |    None    | `api/eng/search?q=halo&s=1&type=series` |
+|   Episode    |    ❌    | integer |    None    | `api/eng/search?q=halo&e=1&type=series` |
+|   Season & Episode    |    ❌    | integer |    None    | `api/eng/search?q=halo&s=1&e=1&type=series` |
 
 <details>
 <summary style='font-size: 15px'><span style='font-size: 20px;font-weight:bold;'>🔍 Example Output for Season</span></summary>
@@ -1620,6 +1620,8 @@ Type can only be 2 type. One is `movies` and other is `series`.
 | Parameter | Required |  Type  | Default |              Example               |
 | :-------: | :------: | :----: | :-----: | :--------------------------------: |
 |   Id (id)   |    ✅    | integer |  None   | `api/view?id=138044` |
+|   Language   |    ❌    | string  |  eng   | `api/fre/view?id=138044` |
+
 
 <details>
 <summary style='font-size: 15px'><span style='font-size: 20px;font-weight:bold;'>🔍 Example Output</span></summary>

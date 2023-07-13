@@ -162,6 +162,10 @@ router.get(["/api/search", "/api/:lan/search"], async (req, res, next) => {
             language: language,
             download: "https://www.opensubtitles.org" + download,
             uploadedAt: uploadedAt,
+            ...($(this).find("td:nth-child(9) > a:nth-child(1)").text().length > 0 && {uploader: {
+              name : $(this).find("td:nth-child(9) > a:nth-child(1)").text() ,
+              role: $(this).find("td:nth-child(9) > a.none").length > 0 ? $(this).find("td:nth-child(9) > a.none").attr('title') : 'default'
+            }})
           });
         });
         results.push({
