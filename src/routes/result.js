@@ -49,14 +49,16 @@ router.get(["/api/view", "/api/:lan/view"], async (req, res, next) => {
             .text()
             .replace(/\s|Watch onlineDownload Subtitles Searcher/g, " ");
           let language = $(this).find("td:nth-child(2) a").attr("title");
-          let download = $(this).find("td:nth-child(5) a").attr("href");
-          let uploadedAt = $(this).find("td:nth-child(4) time").attr("title");
+          let download = $(this).find("td:nth-child(3) a").attr("href") || $(this).find("td:nth-child(5) a").attr("href");
+          let uploadedAt = $(this).find("td:nth-child(5) abbr").attr("title") || $(this).find("td:nth-child(4) time").attr("title");
+          let date = new Date(uploadedAt);
+          let formattedDate = date.toLocaleString();
           
           data.push({
             title: title,
             language: language,
             download: "https://www.opensubtitles.org" + download,
-            uploadedAt: uploadedAt,
+            uploadedAt: formattedDate,
           });
         });
         results.push({
